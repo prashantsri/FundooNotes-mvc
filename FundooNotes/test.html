@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+
+
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+
+        label:hover {
+            background: #f2f5ff;
+            border-radius: 5px;
+            padding: 2px 4px;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+
+<script>
+
+    var img = document.getElementById('i');
+
+    alert(img.getAttribute('src')); // foo.jpg
+    alert(img.src);   
+    var defaultText = 'Click me and enter some text';
+
+    function endEdit(e) {
+        debugger;
+        var input = $(e.target),
+            label = input && input.prev();
+
+        label.text(input.val() === '' ? defaultText : input.val());
+        input.hide();
+        label.show();
+    }
+
+    $('.clickedit').hide()
+        .focusout(endEdit)
+        .keyup(function (e) {
+            debugger;
+            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                endEdit(e);
+                return false;
+            } else {
+                return true;
+            }
+        })
+        .prev().click(function () {
+            $(this).hide();
+            $(this).next().show().focus();
+        });
+</script>
+
+
+<img src="foo.jpg" id="i">
+
+
+
+<body>
+
+    <h2>Opacity with Box</h2>
+    <p>Hover over the image to see the effect.</p>
+    <table>
+        <tr>
+            <td class='container'>
+                <img src="../Images/labels.svg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <img src="../Images/label.svg" alt="Avatar" class="image" style="width:100%">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="control-group">
+        <label for="name" class="control-label">
+            <p class="text-info">Saghir<i class="icon-star"></i></p>
+        </label>
+        <input type="text" class="edit-input" />
+        <div class="controls">
+            <a class="edit" href="#">Edit</a>
+        </div>
+    </div>
+
+
+    <h4>Editable labels (below)</h4>
+
+    <label class="pull-left">Click me and enter some text</label>
+    <input class="clickedit" type="text" />
+    <div class="clearfix"></div>
+
+
+
+</body>
+</html>

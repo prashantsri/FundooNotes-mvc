@@ -1,0 +1,135 @@
+﻿
+@using FundooNotesData.Data.Models
+@using Microsoft.Owin.Security
+@model LoginViewModel
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+
+
+}
+
+<body ng-controller="AppCtrl">
+    <header></header>
+
+    <div>
+        <md-card flex-md="50" flex-sm="50" flex-lg="30" flex-offset-lg="30" flex-offset-md="30" flex-offset-sm="30">
+
+            <h3 style="text-align:center">Sign IN</h3>
+
+            @if (TempData["LoginFaliure"] != null)
+            {
+                <div class="alert alert-warning">
+                    <strong>Warning!</strong> Invalid Login Attempt
+                </div>
+            }
+
+            @using (Html.BeginForm("Signin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { name = "myForm" }))
+            {
+
+
+                <form name="myForm" method="post">
+                    <md-content class="md-padding">
+                        <md-input-container class="md-block">
+                            <label>Email</label>
+                            <input type="email" name="Username" ng-model="Username" required />
+                            <div ng-messages="myForm.Username.$error">
+                                <div ng-message="required">This is required.</div>
+                                <div ng-message="email">Enter valid Email ID</div>
+                            </div>
+                        </md-input-container>
+
+                        <div flex="100">
+                            <md-input-container class="md-block">
+                                <label>Password</label>
+                                <input type="password" ng-model="Password" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,15}$/" name="Password" required />
+                                <div ng-messages="myForm.Password.$error">
+                                    <div ng-message="required">This is required.</div>
+                                    <div ng-message="pattern">Enter valid pass</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+
+                        @*<div class="alert alert-danger">
+                                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                            </div>*@
+
+                        <div class="dialog-demo-content" layout-align="left" layout="row">
+                            <div ng-controller="Forgotpassword">
+                                <md-button class="md-primary" ng-click="Forgotpassword($event)">
+                                    Forgot Password ?
+                                </md-button>
+                            </div>
+                            <div ng-controller="Verifyotp">
+                                <md-button class="md-primary" ng-click="Verifyotp($event)">
+                                    Send & Verify OTP
+                                </md-button>
+                            </div>
+                        </div>
+                        <div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="left">
+                            <md-button class="md-primary" ng-click="gotoregister()">
+                                Create Account
+                            </md-button>
+                            <section layout="row" layout-sm="column">
+                                <md-button type="submit" class="md-raised md-primary">Sign IN</md-button>
+                            </section>
+                        </div>
+                    </md-content>
+                </form>
+            }
+
+            @using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = LoginViewModel.ReturnUrl }))
+            {
+
+                @Html.AntiForgeryToken()
+                <div style="padding-left:40px" id="socialLoginList">
+                    <p>
+                        @foreach (AuthenticationDescription p in loginProviders)
+                        {
+
+                            if (p.AuthenticationType == "Facebook")
+                            {
+                                <div layout="row" layout-align="start">
+                                    <md-button class="md-fab md-primary md-hue-2" aria-label="Profile" type="submit" id="@p.AuthenticationType"
+                                               name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account">
+                                        <b style="font:xx-large;font-size:xx-large; text-transform :lowercase;">f</b>
+                                        <md-icon></md-icon>
+                                    </md-button>
+                                </div>
+
+                                @*<div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="left">
+                                        <md-button class="md-fab md-primary" aria-label="Comment">
+                                            <md-icon md-svg-icon="~/img/fb.svg"></md-icon>
+                                        </md-button>
+                                        <md-button class="md-fab md-primary" aria-label="Comment">
+                                            <md-icon md-svg-icon="~/img/google1.svg"></md-icon>
+                                        </md-button>
+                                    </div>*@
+
+                            }
+
+
+                        }
+                    </p>
+                </div>
+            }
+            @*<div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="left">
+                    <md-button class="md-fab md-primary" aria-label="Comment">
+                        <md-icon md-svg-icon="~/img/fb.svg"></md-icon>
+                    </md-button>
+                    <md-button class="md-fab md-primary" aria-label="Comment">
+                        <md-icon md-svg-icon="~/img/google1.svg"></md-icon>
+                    </md-button>
+                </div>*@
+
+        </md-card>
+    </div>
+
+
+
+</body>
+
+</html>

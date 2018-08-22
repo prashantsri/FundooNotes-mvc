@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-material.min.js"></script>
+    <script src="~/Scripts/angular-animate.min.js"></script>
+    <script src="~/Scripts/angular-aria.min.js"></script>
+    <script src="~/Scripts/angular-messages.js"></script>
+    <script src="~/Scripts/angular-ui-router.min.js"></script>
+    <link href="~/Content/angular-material.min.css" rel="stylesheet" />
+    <script src="~/Scripts/layout2.js"></script>
+    <link href="~/Style/Master.css" rel="stylesheet" />
+</head>
+<body ng-app="layout">
+    <md-content>
+        <md-toolbar>
+            <md-button style="background-color:transparent;width: 0px;" ng-click="toggleLeft() " id="opener">
+                <md-icon md-svg-icon="~/Images/menu.svg"   style=" margin-top:  13px;"></md-icon>
+            </md-button>
+            <md-truncate style="position: absolute; left: 90px; right: 170px; top: 21px; bottom: 13px;">Fundoo Notes</md-truncate>
+        </md-toolbar>
+    </md-content>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+</body>
+
+</html>

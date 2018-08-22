@@ -1,0 +1,225 @@
+﻿
+@using FundooNotesData.Data.Models;
+@model VerifyPhoneNumberBindingModel
+@{
+    Layout = "~/Views/Shared/_PageLayout.cshtml";
+}
+<html>
+
+<body ng-controller="Registerctrl">
+    <header></header>
+    <md-card flex-md="50" flex-sm="50" flex-lg="30" flex-offset-lg="30" flex-offset-md="30" flex-offset-sm="30">
+        <h3 style="text-align:center">Register</h3>
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { name = "myForm" }))
+        {
+            <form name="myForm">
+                <div>
+                    <md-content>
+                        <md-tabs md-dynamic-height md-border-bottom md-selected="myindex">
+                            <md-tab label="Personal" ng-show="Personal">
+                                <md-content class="md-padding">
+                                    <md-input-container class="md-block">
+                                        <label>First Name</label>
+                                        <input name="FirstName" type="text" ng-model="FirstName" required md-maxlength="20" />
+                                        <div ng-messages="myForm.FirstName.$error">
+                                            <div ng-message="required">First Name is required  </div>
+                                        </div>
+                                    </md-input-container>
+
+                                    <md-input-container class="md-block">
+                                        <label>Last Name</label>
+                                        <input name="LastName" type="text" ng-model="LastName" required md-maxlength="20" />
+                                        <div ng-messages="myForm.LastName.$error">
+                                            <div ng-message="required">Last Name is required  </div>
+                                        </div>
+                                    </md-input-container>
+                                    <div layout="row" class="form-group">
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <label>Gender</label>
+                                            <md-select name="Gender" ng-model="Gender" required>
+                                                <md-option value="male">Male</md-option>
+                                                <md-option value="female">  Female </md-option>
+                                            </md-select>
+                                            <div ng-messages="myForm.Gender.$error">
+                                                <div ng-message="required">Gender is required  </div>
+                                            </div>
+                                        </md-input-container>
+
+                                        <md-input-container class="md-block">
+                                            <LABEL>Date of Birth</LABEL>
+
+                                            <md-datepicker name="DateOfBirth" ng-model="DateOfBirth" required></md-datepicker>
+                                            <div ng-messages="myForm.DateOfBirth.$error">
+                                                <div ng-message="required">Date is required  </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                    <md-input-container class="md-block">
+                                        <label>Adhar Number</label>
+                                        <input type="text" name="Adhar" ng-model="Adhar" required md-maxlength="20" ng-pattern="/^[0-9]{4}-[0-9]{4}-[0-9]{4}$/" />
+                                        <div class="hint" ng-if="!ShowHints">####-####-####</div>
+                                        <div ng-messages="myForm.Adhar.$error">
+                                            <div ng-message="required">Date is required  </div>
+                                            <div ng-message="pattern">Enter Valid Aadhar Number</div>
+                                        </div>
+                                    </md-input-container>
+                                    <div layout="row">
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <label>Country Code</label>
+                                            <md-select ng-model="selectedCountry" name="selectedCountry" required>
+                                                <md-option value="+91">(+91)</md-option>
+                                                <md-option value="+92">  (+92)</md-option>
+                                            </md-select>
+                                            <div ng-messages="myForm.selectedCountry.$error">
+                                                <div ng-message="required">code is required  </div>
+                                            </div>
+                                        </md-input-container>
+
+                                        <md-input-container class="md-block">
+                                            <label>Phone Numver</label>
+                                            <input name="PhoneNumber" type="text" ng-model="PhoneNumber"   ng-pattern="/^[0-9]{10}$/" required md-maxlength="10" />
+                                            <div ng-messages="myForm.PhoneNumber.$error">
+                                                <div ng-message="required">Phone Number is required  </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                    @*<div layout-gt-sm="column" ng-controller="Verifyotp">
+                                            <md-button type="submit" ng-disabled="myForm.PhoneNumber.$invalid">Verify Phone Number</md-button>
+                                        </div>*@
+
+                                    @*@using (Html.BeginForm("verifycode", "Account", FormMethod.Get))
+                                        {
+                                            <div layout-gt-sm="column" ng-controller="Verifyotp">
+                                                <md-button class="md-primary" type="Submit" ng-click="Verifyotp($event)" ng-disabled="myForm.PhoneNumber.$invalid">
+                                                    Verify Phone Number
+                                                </md-button>
+                                            </div>
+
+                                        }*@
+
+                                    <div layout-gt-sm="column" ng-controller="Verifyotp">
+                                        @*<md-button class="md-primary" type="Submit" ng-click="Verifyotp($event)" onclick="location.href='@Url.Action("verifycode", "Account")'" ng-disabled="myForm.PhoneNumber.$invalid">*@
+                                        <md-button class="md-primary" type="Submit"  ng-click="PassPhone()" ng-disabled="myForm.PhoneNumber.$invalid">
+                                        @*<md-button class="md-primary" type="Submit" onclick="location.href='@Url.Action("verifycode", "Account")?id=' + document.getElementById('PhoneNumber').value" ng-disabled="myForm.PhoneNumber.$invalid">*@
+                                            Verify Phone Number
+                                        </md-button>
+                                    </div>
+                                    @*<input type="button" value="Go Somewhere Else"  onclick="location.href='@Url.Action("verifycode", "Account")'" />*@
+
+                                    <div layout-gt-sm="column">
+                                        <md-button ng-disabled="myForm.FirstName.$invalid || myForm.LastName.$invalid || myForm.Gender.$invalid||
+                                               myForm.Date.$invalid || myForm.Adhar.$invalid || myForm.code.$invalid || myForm.Phone.$invalid" ng-click="myindex=myintex+1">Next</md-button>
+                                    </div>
+                                </md-content>
+                            </md-tab>
+                            <md-tab label="Address" ng-disabled="myForm.FirstName.$invalid || myForm.LastName.$invalid || myForm.Gender.$invalid||
+                                               myForm.Date.$invalid || myForm.Adhar.$invalid || myForm.code.$invalid || myForm.Phone.$invalid">
+                                <md-content class="md-padding">
+                                    <md-input-container class="md-block">
+                                        <label>Address</label>
+                                        <input type="text" name="Address" ng-model="Address" required md-maxlength="20" />
+                                        <div ng-messages="myForm.Address.$error">
+                                            <div ng-message="required">Address is required  </div>
+                                        </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Line2</label>
+                                        <input type="text" name="Line2" ng-model="Line2" md-maxlength="20" />
+                                        <div ng-messages="myForm.Line2.$error">
+                                            <div ng-message="required">Address is required  </div>
+                                        </div>
+                                    </md-input-container>
+
+                                    <md-input-container class="md-block" flex-gt-sm>
+                                        <label>State</label>
+                                        <md-select name="state" ng-model="state" required>
+                                            <md-option value="AndhraPradesh">Andhra Pradesh</md-option>
+                                            <md-option value="maharashtra">  Maharashtra </md-option>
+                                        </md-select>
+                                        <div ng-messages="myForm.state.$error">
+                                            <div ng-message="required">State is required  </div>
+                                        </div>
+
+                                    </md-input-container>
+
+                                    <md-input-container class="md-block">
+                                        <label>City</label>
+                                        <input name="city" type="text" ng-model="city" required />
+                                        <div ng-messages="myForm.city.$error">
+                                            <div ng-message="required">city is required  </div>
+                                        </div>
+                                    </md-input-container>
+
+                                    <md-input-container class="md-block">
+                                        <label>Postal Code</label>
+                                        <input name="postalcode" type="text" ng-model="postalcode" ng-pattern="/^[0-9]{6}$/" required md-maxlength="6" />
+                                        <div ng-messages="myForm.postalcode.$error">
+                                            <div ng-message="required">postalcode is required  </div>
+                                            <div ng-message="pattern">Enter valid code</div>
+                                        </div>
+                                    </md-input-container>
+                                    <div layout="row" layout-align="center">
+                                        <div layout-gt-sm="column">
+                                            <md-button ng-click="myindex=myindex-1">Back</md-button>
+                                        </div>
+                                        <div layout-gt-sm="column">
+                                            <md-button ng-disabled="myForm.Address.$invalid ||myForm.Line2.$invalid||myForm.state.$invalid||myForm.city.$invalid || myForm.postalcode.$invalid" ng-click="myindex=myindex+1">Next</md-button>
+                                        </div>
+                                    </div>
+
+                                </md-content>
+                            </md-tab>
+                            <md-tab label="Security" ng-disabled="myForm.Address.$invalid ||myForm.Line2.$invalid||myForm.state.$invalid||myForm.city.$invalid || myForm.postalcode.$invalid">
+                                <md-content class="md-padding">
+
+                                    <md-input-container class="md-block">
+                                        <label>User Name</label>
+                                        <input type="email" name="Username" ng-model="Username" ng-pattern="eml_add" required />
+                                        <div ng-messages="myForm.Username.$error">
+                                            <div ng-message="required">Email ID is required  </div>
+                                            <div ng-message="pattern">Enter valid Email ID</div>
+                                        </div>
+                                    </md-input-container>
+
+
+                                    <md-input-container class="md-block">
+
+                                        <label>Password</label>
+                                        <input ng-model="password1" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,15}$/" class="form-control" name="password1" required type="password" />
+                                        <div ng-messages="myForm.password1.$error">
+                                            <div ng-message="required">Password is required  </div>
+                                            <div ng-message="pattern">Enter valid Password</div>
+                                        </div>
+                                    </md-input-container>
+
+                                    <md-input-container class="md-block">
+                                        <label>Confirm Password</label>
+                                        <input ng-model="cpass" name="cpass" required type="password" ng-pattern="password1" />
+                                        <div ng-messages="myForm.cpass.$error">
+                                            <div ng-message="required">Password is required  </div>
+                                            <div ng-message="pattern">Your passwords must match.</div>
+                                        </div>
+
+                                    </md-input-container>
+                                    <div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="right">
+                                        <section layout="row" layout-sm="column">
+                                            <md-button class="md-raised md-primary" ng-click="myindex=myindex-1">Back</md-button>
+                                        </section>
+                                        <section layout="row" layout-sm="column">
+                                            <md-button class="md-raised md-primary" @*ng-click="submitall()"*@ type="Submit" ng-disabled="myForm.Username.$invalid||myForm.password1.$invalid||myForm.cpass.$invalid">Verify & Register</md-button>
+                                        </section>
+                                    </div>
+                                </md-content>
+                            </md-tab>
+                        </md-tabs>
+                    </md-content>
+                </div>
+            </form>
+        }
+
+
+    </md-card>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotesData.Data\bin\Debug\FundooNotesData.Data.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotesData.Data\bin\Debug\FundooNotesData.Data.pdb
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.csprojResolveAssemblyReference.cache
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.csproj.CoreCompileInputs.cache
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.pdb
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\FundooNotesData.Data.dll.config
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\FundooNotesData.Data.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\FundooNotesData.Data.pdb
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\EntityFramework.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\mailgun_csharp.AspNet.Identity.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\mailgun_csharp.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Cors.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.Google.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\RestSharp.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Net.Http.Formatting.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.ValueTuple.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Cors.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Helpers.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Http.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Http.Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Mvc.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Razor.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.WebPages.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Twilio.AspNet.Common.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Twilio.AspNet.Mvc.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Twilio.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\EntityFramework.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Cors.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.Google.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Net.Http.Formatting.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.ValueTuple.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Helpers.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Http.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Http.Owin.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Mvc.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.Razor.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.WebPages.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\bin\Debug\Twilio.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.csprojAssemblyReference.cache
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.Migrations.Initial.resources
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.csproj.GenerateResource.cache
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.csproj.CoreCompileInputs.cache
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.csproj.CopyComplete
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotesData.Data\obj\Debug\FundooNotesData.Data.pdb

@@ -1,0 +1,145 @@
+﻿@model System.Collections.Generic.List<tblNotes>
+@using FundooNotesData.Data.Models;
+@using Newtonsoft.Json;
+
+
+<sidenav></sidenav>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+
+
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+<script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
+
+
+<body ng-controller="notectrl">
+    <div style="margin-left:300px">
+        
+        @*<input type="hidden" value="ReadArray" onload="readData()" />*@
+        @if (Model != null)
+        {
+            if (@ViewBag.reminderdata != null)
+            {
+                <script type="text/javascript">
+
+                    debugger;
+                        var jScriptArray = new Array();
+                        var array = @Html.Raw(Json.Encode(@ViewBag.reminderdata));
+                    for (var i = 0; i < array.length; i++)
+                    {
+                            jScriptArray[i] = array[i];
+                    }
+
+
+
+                </script>
+            }
+          
+            <div ui-sortable ng-cloak layout="row" flex-offset="10" layout-wrap layout-align-xs="center" layout-xs="row" layout-sm="row" layout-md="row" style="flex-wrap:wrap; ">
+
+                @foreach (tblNotes obj in Model.Reverse<tblNotes>())
+                {
+                    if ( obj.IsTrash == 1 )
+                    {
+
+                        <md-card ng-style="CustomNote" style="background-color:@obj.ColorCode; height:100%!important" class="division">
+                            @*<div style="margin-top:10px;margin-left:10px">*@
+                            <div layout="row" layout-wrap>
+                                <div layout="row" layout-align="start center" flex>
+                                    <span style="font-weight:bold">@obj.Title</span>
+                                </div>
+                                @*<div layout="row" class="icon" layout-align="end center" flex>
+                                    <md-button ng-click="ispin(@JsonConvert.SerializeObject(obj))">
+                                        <md-tooltip>Pin</md-tooltip>
+                                        <md-icon md-svg-icon="~/Images/pin.svg"></md-icon>
+                                    </md-button>
+                                  
+                                </div>*@
+                            </div>
+                            <div layout="row">
+                                <span>@obj.Content</span>
+                            </div>
+                            <div>
+                                @if (obj.ImageUrl != null)
+                                {
+                                    <img src="@obj.ImageUrl" style="width:100%;height:auto;" />
+
+                                }
+                            </div>
+
+
+                            @if (obj.Reminder != null)
+                            {
+                                <md-chips md-removable="true" readonly="false">
+                                    <md-chip>
+                                        <md-chip-template>
+                                            @obj.Reminder  <md-icon md-svg-icon="~/Images/cancel.svg" ng-click="remove(@JsonConvert.SerializeObject(obj))" style="opacity:0.5"></md-icon>
+                                        </md-chip-template>
+                                    </md-chip>
+                                </md-chips>
+                            }
+
+                            <div layout="row" class="mainDiv">
+                               
+                                <div layout="row">
+                                    <md-menu-bar>
+                                        <md-menu>
+                                            <div class="icon">
+                                                <button style="border:none;outline:none;background:transparent;margin-bottom:10px;margin-left:-24px" ng-click="$mdMenu.open()">
+                                                    <md-tooltip>More</md-tooltip>
+                                                    <md-icon md-svg-icon="~/Images/more.svg"></md-icon>
+                                                </button>
+
+                                            </div>
+                                            <md-menu-content width="2">
+                                                <md-menu-item>
+                                                    <md-button ng-click="Deleteforever(@JsonConvert.SerializeObject(obj))">
+                                                        Delete forever
+                                                    </md-button>
+                                                </md-menu-item>
+                                                <md-menu-item>
+                                                    <md-button ng-click="Restore(@JsonConvert.SerializeObject(obj))">
+                                                        Restore
+                                                    </md-button>
+                                                </md-menu-item>
+                                            </md-menu-content>
+                                        </md-menu>
+                                    </md-menu-bar>
+                                </div>
+
+
+                            </div>
+
+                        </md-card>
+
+
+                    }
+
+                }
+
+            </div>
+
+
+        }
+
+    </div>
+</body>
+
+
+
+

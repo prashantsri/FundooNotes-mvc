@@ -1,0 +1,30 @@
+﻿@model System.Collections.Generic.List<tblLabel>
+@using FundooNotesData.Data.Models;
+@using Newtonsoft.Json;
+
+<body ng-controller="notectrl">
+    <div layout="row">
+        <md-dialog>
+         <div style="  padding-left: 22px;">Label Notes</div> 
+            <div layout="row" layout-align="start center" flex-offset="10" flex>
+
+                <div layout="column" style="padding-top:40px">
+                    @foreach (tblLabel obj in Model.Reverse<tblLabel>())
+                    {
+                        <md-checkbox   ng-click="$ctrl.toggle(@JsonConvert.SerializeObject(obj))"> @obj.Label </md-checkbox>
+                    }
+                </div>
+            </div>
+            <div layout="row" layout-align="end center" flex>
+                <md-button ng-click="$ctrl.AddSelected()">
+                    Done
+                </md-button>
+            </div>
+
+
+        </md-dialog>
+
+    </div>
+
+</body>
+

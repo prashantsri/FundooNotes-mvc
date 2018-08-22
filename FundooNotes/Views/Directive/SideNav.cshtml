@@ -1,0 +1,133 @@
+﻿@model System.Collections.Generic.List<tblLabel>
+@using FundooNotesData.Data.Models;
+@using Newtonsoft.Json;
+
+
+<body ng-controller="notectrl">
+
+    <div layout="column">
+        <md-toolbar ng-style="toolbar" class="md-hue-2" style="background-color:rgb(63,81,181)">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleLeft()">
+                    <md-tooltip>Menu</md-tooltip>
+                    <md-icon ng-style="icon" md-svg-icon="~/Images/menu.svg"></md-icon>
+
+                </md-button>
+                <h4 style="margin-left:10px">FundooNotes</h4>
+
+
+                <span flex></span>
+                <md-menu-bar style=" margin-top:  12px;">
+                    <md-icon ng-style="icon" md-svg-icon={{img}} style=" margin-right: 160px;" ng-click="view()"></md-icon>
+                    <md-menu>
+                        @if (TempData["profile"] != null)
+                        {
+                            <md-button class="md-fab md-mini" ng-click="$mdMenu.open()" aria-label="Profile" style="background-color:rgb(63,81,181)">
+                                <md-tooltip>@Session["EmailId"]</md-tooltip>
+                                <img src="@TempData["profile"]" style="height:40px;width:34px" />
+                                @*<md-icon md-svg-icon="~/Images/Account.svg" style="height:3px;width:22px"></md-icon>*@
+                            </md-button>
+                        }
+                        else
+                        {
+                            string email = Session["EmailId"].ToString();
+                            email = email.Substring(0, 1);
+                            <md-button class="md-fab md-mini" ng-click="$mdMenu.open()" aria-label="Profile" style="margin-left:-15px">
+                                <md-tooltip>@Session["EmailId"]</md-tooltip>
+                                <b style="font:xx-large;font-size:xx-large; text-transform :uppercase;">@email</b>
+                                @*<md-icon md-svg-icon="~/Images/Account.svg" style="height:3px;width:22px"></md-icon>*@
+                            </md-button>
+
+                        }
+
+                        <md-menu-content width="2">
+
+
+
+                            <md-menu-item>
+                                <div>
+                                    <label>@TempData["Name"]</label>
+                                </div>
+
+                            </md-menu-item>
+
+                            <md-item>
+                                <md-button class="md-primary" typeof="submit">
+
+                                    <span>@Html.ActionLink("Logout", "Logout", "Account")</span>
+                                </md-button>
+                            </md-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-menu-bar>
+            </div>
+
+        </md-toolbar>
+    </div>
+    <div>
+        <md-sidenav class="md-sidenav-left" md-component-id="left" flex-md="20" flex-lg="20" flex-sm="20" flex-xs="20" style=" position: fixed;margin-top:63px ;transition: 0.5s;border:none" md-disable-backdrop md-whiteframe="4">
+            <md-menu>
+                <md-menu-content>
+                    <md-menu-item>
+                        <md-button style="border:none; background:transparent;margin-bottom:10px">
+                            <md-icon md-svg-icon="~/Images/notes.svg"></md-icon>
+                            <strong>@Html.ActionLink("Notes", "GetNotes", "Notes") </strong>
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button>
+                            <md-icon md-svg-icon="~/Images/Remainder.svg"></md-icon>
+                            <strong>@Html.ActionLink("Reminder", "Reminder", "Notes")</strong>
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+            <md-menu>
+                <md-menu-content>
+                    <md-menu-item>
+                        <md-button ng-click="CreateLabel($event)" style="border:none; background:transparent;margin-bottom:10px;">
+                            <md-icon md-svg-icon="~/Images/label.svg"></md-icon>
+                            <span>
+                                Create Label
+                            </span>
+                        </md-button>
+                    </md-menu-item>
+                    @foreach (tblLabel item in Model)
+                    {
+
+                        <md-menu-item>
+                            <md-button style="border:none; background:transparent;margin-bottom:10px" ng-click="GetLabel(@JsonConvert.SerializeObject(item))">
+                                <img src="~/Images/labels.svg" style="padding:0 10px 0 10px;" />
+
+                                <strong>
+                                    @item.Label
+                                </strong>
+                            </md-button>
+                        </md-menu-item>
+
+                    }
+
+                </md-menu-content>
+            </md-menu>
+
+            <div>
+            </div>
+            <md-menu>
+                <md-menu-item>
+                    <md-button>
+                        <md-icon md-svg-icon="~/Images/Archive.svg"></md-icon>
+                        <strong>@Html.ActionLink("Archive", "Archive", "Notes")</strong>
+                    </md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button>
+                        <md-icon md-svg-icon="~/Images/Trash.svg"></md-icon>
+                        <strong>@Html.ActionLink("Trash", "Trash", "Notes")</strong>
+                    </md-button>
+
+                </md-menu-item>
+            </md-menu>
+        </md-sidenav>
+    </div>
+</body>
+

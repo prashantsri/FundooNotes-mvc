@@ -1,0 +1,75 @@
+﻿@using FundooNotesData.Data.Models;
+@model VerifyPhoneNumberBindingModel
+
+@{
+    Layout = null;
+}
+<div>
+    
+    @*<md-dialog aria-label="Verify OTP">*@
+      
+        @*@using (Html.BeginForm("verifycode", "Account", FormMethod.Get))
+        {*@
+            <div style="background-color:#4152b0;height:50px;font-weight:bold;font-size:xx-large;padding-top:8px">
+                VERIFY code
+                <md-button class="md-icon-button" ng-click="cancel()" style="margin-left:250px">
+                    <b style="font-size:30px">X</b> <md-icon aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+            <md-card style="width:500px">
+                <div style="padding-left:40px">
+                    <md-input-container>
+                        <label>User Name</label>
+                        <input type="email" ng-model="Username" id="Email" name="Username" required />
+                        <div ng-messages="myForm.Username.$error">
+                            <p ng-message="required">Enter Email ID</p>
+                            <p ng-message="email" class="help-block">Enter valid Email ID</p>
+                        </div>
+                    </md-input-container>
+                </div> 
+                @*<div layout="row" layout-align="end end"  ng-controller="Verifyotp" >
+                    <md-button type="submit" ng-click="Verifyotp1($event)"  >
+                        SEND
+                    </md-button>
+                </div>*@
+                <div class="dialog-demo-content" layout-align="left" layout="row" ng-controller="contopenotp">                  
+                    <div>
+                        <md-button class="md-primary"  type="submit"  ng-click="openotp($event)">
+                            SEND
+                        </md-button>
+                    </div>
+                </div>
+            </md-card>
+        @*}*@
+
+        @using (Html.BeginForm("verifyotp", "Account", FormMethod.Post))
+        {
+            <md-card style="width:500px">
+                <div style="padding-left:40px">
+                    <md-input-container>
+                        <label>User Name</label>
+                        <input type="email" ng-model="Username" id="Email" name="Username" required />
+                        <div ng-messages="myForm.Username.$error">
+                            <p ng-message="required">Enter Email ID</p>
+                            <p ng-message="email" class="help-block">Enter valid Email ID</p>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>OTP</label>
+                        <input type="text" name="Code" ng-model="Code" value="@ViewBag.Code" required />
+                        <div ng-messages="myForm.Code.$error">
+                            <p ng-message="required">OTP is required</p>
+                        </div>
+
+                    </md-input-container>
+
+                </div>
+                <div layout="row" layout-align="end end">
+                    <md-button type="submit">
+                        VERIFy
+                    </md-button>
+                </div>
+            </md-card>
+        }
+    @*</md-dialog>*@
+</div>

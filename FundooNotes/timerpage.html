@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="time"></div>
+    <div id="para1"></div>
+</body>
+<script type="text/javascript">
+    (function () {
+        debugger;
+        function checkTime(i) {
+            return (i < 10) ? "0" + i : i;
+        }
+
+        function startTime() {
+            
+
+
+            var d = new Date();
+            if (checkTime(d.getHours()).toString().length == 1) {
+                hours = '0' + checkTime(d.getHours());
+            }
+            else {
+                hours = checkTime(d.getHours());
+                if (hours > 12) {
+                    hours -= 12;
+
+                } else if (hours === 0) {
+                    hours = 12;
+                }
+            }
+            minutes = checkTime(d.getMinutes()).toString().length == 1 ? '0' + checkTime(d.getMinutes()) : checkTime(d.getMinutes()),
+                
+                ampm = checkTime(d.getHours()) >= 12 ? 'pm' : 'am',
+                months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+           
+            //document.getElementById('time').innerHTML = checkTime(d.getDate()) + " " + months[d.getMonth()] + " " + hours + " " + minutes + " " + ampm ;
+
+            var time = checkTime(d.getDate()) + " " + months[d.getMonth()] + " " + hours + " " + minutes + " " + ampm;
+            
+            t = setTimeout(function () {
+                startTime()
+            }, 500);
+
+
+
+
+
+            
+        }
+        startTime();
+    })();
+</script>
+</html>

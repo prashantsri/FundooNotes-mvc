@@ -1,0 +1,119 @@
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\ApplicationInsights.config
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Tests.dll.config
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Tests.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Tests.pdb
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Razor.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.pdb
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Razor.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Optimization.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.csprojResolveAssemblyReference.cache
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.pdb
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.dll.config
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.csproj.CoreCompileInputs.cache
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Prashant\New folder\New folder\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\ApplicationInsights.config
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Tests.dll.config
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Tests.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Tests.pdb
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Razor.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotesData.Data.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Services.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\EntityFramework.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Owin.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Security.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Twilio.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Cors.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Cors.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.pdb
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.dll.config
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Razor.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotesData.Data.pdb
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotesData.Data.dll.config
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Optimization.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Services.pdb
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\FundooNotes.Services.dll.config
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.Owin.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\EntityFramework.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Security.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Twilio.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\Microsoft.Owin.Cors.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.csprojAssemblyReference.cache
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.csproj.CoreCompileInputs.cache
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.csproj.CopyComplete
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.dll
+E:\Prashant\fundoonotes\FundooNotes\FundooNotes.Tests\obj\Debug\FundooNotes.Tests.pdb

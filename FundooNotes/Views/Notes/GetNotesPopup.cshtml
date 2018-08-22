@@ -1,0 +1,166 @@
+﻿
+<div style="background-color:{{note.ColorCode}}">
+    <div style="margin-top:10px;margin-left:10px;background-color:{{note.ColorCode}}">
+        <div layout="row" layout-wrap style="background-color:{{note.ColorCode}}">
+            <div layout="row" layout-align="start center" flex>
+                <md-container md-no-float="true">
+                    <input ng-model="note.Title" placeholder="Title" value="Title" style="outline:none;border:none;font-weight:bold;background-color:inherit" />
+                </md-container>
+
+            </div>
+            <div layout="row" layout-align="end center" flex>
+                <md-button ng-click="Pin(note)">
+                    <md-tooltip>Pin</md-tooltip>
+                    <md-icon md-svg-icon="~/Images/pin.svg" style="color:{{IsPin}}"></md-icon>
+                </md-button>
+            </div>
+        </div>
+        <div layout="row">
+            <md-input-container md-no-float="true" style="margin-top:-1px">
+                <textarea ng-model="note.Content" placeholder="Take note......" style="outline:none;border:none"></textarea>
+            </md-input-container>
+        </div>
+        <div>
+            <img src="{{note.ImageUrl}}" />
+        </div>
+        <md-chips ng-if="note.Reminder" md-removable="true" readonly="false">
+            <md-chip >
+                <md-chip-template>
+                    {{note.Reminder}}   <md-icon ng-model="Reminder" md-svg-icon="~/Images/cancel.svg" ng-click="remove(note)" style="opacity:0.5"></md-icon>
+                </md-chip-template>
+            </md-chip>
+        </md-chips>
+        <div layout="row">
+
+            <div layout="row">
+                <md-menu class="icon">
+                    <button style="border:none;outline:none;background:transparent;margin-top:7px;margin-left:-4px" ng-click="$mdMenu.open()">
+                        <md-tooltip>Reminde Me</md-tooltip>
+                        <md-icon md-svg-icon="~/Images/Remainder.svg" style="height:17px;width:10px"></md-icon>
+                    </button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item style="height:100%;">
+                            <h5>Reminder:</h5>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="remToday(note)">Later Today <span style="margin-left:30px;">8:00 PM</span></md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="remTommorrow(note)">Tommorrow <span style="margin-left:30px;">8:00 AM</span></md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="remWeek(note)">Next Week<span style="margin-left:40px;">Mon  8:00 AM</span> </md-button>
+                        </md-menu-item>
+
+
+                        <md-menu-item layout="column">
+
+                            <md-menu-bar>
+                                <md-menu class="icon">
+                                    <md-button ng-click="$mdMenu.open()"><md-icon md-svg-icon="~/Images/Alarm.svg"></md-icon><strong>Pick Date & Time</strong></md-button>
+                                    <md-menu-content Width="2">
+                                        <md-menu-item layout="row">
+                                            <md-input-container md-no-float>
+                                                <input type="text" ng-model="date" data-format="MM/dd/yyyy HH:mm:ss PP" name="date" value="" placeholder="click to show datepicker" />
+
+
+                                            </md-input-container>
+                                        </md-menu-item>
+
+                                        <md-menu-item layout="row" layout-align="end">
+                                            <md-button ng-click="saveRem(note)">Save</md-button>
+                                        </md-menu-item>
+                                    </md-menu-content>
+                                </md-menu>
+                            </md-menu-bar>
+
+
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </div>
+            <div class="icon" layout="row">
+                <menu-bar>
+
+
+                    <md-menu>
+                        <div class="icon">
+                            <button ng-mouseenter="$mdMenu.open()" style="border:none; background:transparent;margin-bottom:10px;margin-top:8px;margin-left:-5px">
+                                <md-tooltip>Color</md-tooltip>
+                                <md-icon md-svg-icon="~/Images/Color.svg"></md-icon>
+                            </button>
+
+                        </div>
+
+                        <md-menu-content ng-mouseleave="$mdMenu.close()" style="height:60px;">
+                            <md-menu-item>
+                                <div>
+                                    <div style="margin-bottom:5px">
+                                        <button ng-click="color(note ,'rgb(255, 204, 204)')" style="border-radius:100%;outline:none;border:none ;background-color:rgb(255, 204, 204)">
+                                            <md-icon md-svg-src=""></md-icon>
+                                        </button>
+
+                                        <button ng-click="color(note ,'rgb(255,240,245)')" style="border-radius:100%;outline:none;border:none ;background-color: rgb(255,240,245)">
+                                            <md-icon md-svg-src=""></md-icon>
+                                        </button>
+
+                                        <button ng-click="color(note ,'rgb(230,230,250)')" style="border-radius:100%;outline:none;border:none ;background-color:rgb(230,230,250)">
+                                            <md-icon md-svg-src=""></md-icon>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button ng-click="color(note ,'rgb( 224,255,255)')" style="border-radius:100%;outline:none;border:none ;background-color:rgb(224,255,255)">
+                                            <md-icon md-svg-src=""></md-icon>
+                                        </button>
+
+                                        <button ng-click="color(note ,'rgb(216,191,216)')" style="border-radius:100%;outline:none;border:none ;background-color: rgb(216,191,216)">
+                                            <md-icon md-svg-src=""></md-icon>
+                                        </button>
+
+                                        <button ng-click="color(note ,'rgb(119,136,153)')" style="border-radius:100%;outline:none;border:none ;background-color:rgb(119,136,153)">
+                                            <md-icon md-svg-src=""></md-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+
+
+
+                </menu-bar>
+
+
+            </div>
+
+            <div class="icon" layout="row">
+                <button ng-click="addImage(note)" style="border:none; background:transparent;margin-bottom:7px">
+                    <md-tooltip>Add Image</md-tooltip>
+                    <md-icon md-svg-icon="~/Images/Image.svg"></md-icon>
+                </button>
+
+                <input style="display:none" type="file" id="imagefile" file-model="FileImage" />
+            </div>
+            <div class="icon" layout="row">
+                <button ng-click="Archive(note)" style="border:none; background:transparent;margin-bottom:7px">
+                    <md-tooltip>Archive</md-tooltip>
+                    <md-icon md-svg-icon="~/Images/Archive.svg"></md-icon>
+                </button>
+
+            </div>
+
+            <div class="icon" layout="row">
+
+                <button style="border:none;outline:none; background:transparent;margin-bottom:4px">
+                    <md-tooltip>More</md-tooltip>
+                    <md-icon md-svg-icon="~/Images/more.svg"></md-icon>
+                </button>
+            </div>
+            <div layout="row" layout-align="end" flex>
+                <md-button ng-model="UserId" ng-click="Editcontent(note)">Done</md-button>
+            </div>
+
+        </div>
+
+    </div></div>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div ng-repeat="note in labels">
+        <table>
+            <thead>
+                <tr><th colspan="2" style="   border:  none;"> Edit labels</th></tr>
+                <tr>
+                    <td style="border:none">
+                        <input placeholder="Create New Label" class="form-control" name="addLabel" id="txtlabel" />
+                    </td>
+                    <td style="border:none">
+                        <input type="image" src="~/Images/Done.svg" alt="Submit" style=" margin-top:  4px;" onclick="addlabel()">
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="  border: none;  text-align:left; ">
+                        <img src="../Images/labels.svg" style="padding: 0 10px 0 10px;" />
+                        <label Class="mytxt">  {{note.Label}}</label>
+                    </td>
+                    <td style="border:none">
+                        <img src="../Images/edit.svg" Class="mytxt" />
+                        <input type="hidden" name="custId">
+                    </td>
+                </tr>
+            </tbody>
+         
+        </table>
+
+       
+    </div>
+</body>
+</html>

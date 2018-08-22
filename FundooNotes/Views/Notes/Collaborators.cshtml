@@ -1,0 +1,82 @@
+﻿
+<div style="height:500px;width:500px ; position: relative;    margin: 0 auto;    top: 25%;   ">
+    <form name="form">
+
+
+        <md-dialog aria-label="FortgotPassword">
+
+
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+
+                    <h2>Collaborator</h2>
+                </div>
+            </md-toolbar>
+            @*<div layout="row">*@
+
+                @*@if (Session["EmailId"] != null)
+                    {
+                        string email = Session["EmailId"].ToString();
+                        email = email.Substring(0, 1);
+                        <div layout="row" layout-align="start center">
+                            <md-button class="md-fab md-mini" aria-label="Eat cake">
+                                <b style="font:xx-large;font-size:xx-large; text-transform :lowercase;">@email</b>
+                            </md-button>
+                        </div>
+                    }*@
+
+
+                <div ng-repeat="data in $ctrl.own"  layout-align="end center">
+                    <div ng-if="data.OwnerID !=null">
+                        <div layout="row" layout-align="start center">
+                            <md-button class="md-fab md-mini" aria-label="Eat cake">
+                                <b style="font:xx-large;font-size:xx-large; text-transform :uppercase;">{{data.Firstalph}}</b>
+                            </md-button>
+                            <span>{{data.OwnerID}}</span><label>(Owner)</label>
+                        </div>
+                    </div>
+                    <div layout="row" layout-align="start center">
+                        <md-button class="md-fab md-mini" aria-label="Eat cake">
+                            <b style="font:xx-large;font-size:xx-large; text-transform :uppercase;">{{data.Firstshar}}</b>
+                        </md-button>
+                        <span>{{data.SharID}} <md-icon md-svg-icon="~/Images/cancel.svg" ng-click="$ctrl.Deletemail(this)" style="opacity:0.5"></md-icon></span>
+                    </div>
+                </div>
+            @*</div>*@
+
+
+            <div layout="row">
+                <div layout="row" layout-align="start center">
+                    <md-input-container md-no-float>
+                        <textarea type="email" id="Email" name="Email" ng-model="pick.Email" style="height:30px;border:none;width:253px;" placeholder="Email to share with "></textarea>
+                        @*<input type="email" id="Email" name="Email" ng-maxlength="50" ng-minlength="7" ng-model="pick.Email" value="" style="height:30px;border:none;width:150px;" placeholder="Email to share with" />*@
+                        <div ng-messages="form.Email.$error">
+                            <div ng-message="required">This Is Required Field!</div>
+
+                            <div ng-message="email">Email is Invalid</div>
+                        </div>
+
+                    </md-input-container>
+                </div>
+                <div layout="row" layout-align="end center">
+                    <md-button ng-click="$ctrl.Collaborator(pick)" style=" margin-top:  -46px;">
+                        <md-icon md-svg-icon="~/Images/Done.svg" style="color:gray"></md-icon>
+                    </md-button>
+
+                </div>
+            </div>
+
+            @if (TempData["result"] != null)
+            {
+                <div layout="row" layout-align="end start">
+
+                    <md-toast>
+                        <label class="alert alert-success" id="dialog">@TempData["result"]</label>
+                    </md-toast>
+
+                </div>
+            }
+
+        </md-dialog>
+    </form>
+</div>
